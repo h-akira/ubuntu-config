@@ -1,5 +1,5 @@
 # Ubuntu用のconfig
-[linux-mint用のもの](https://github.com/h-akira/linux-config)がベースとしている．
+[linux-mint用のもの](https://github.com/h-akira/linux-config)をベースとしている．
 
 # 条件・仕様
 - Ubuntu 22.04.1 LTS
