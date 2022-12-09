@@ -1,0 +1,19 @@
+## ディスプレイの設定
+## 2つのHDMIが接続されている場合の初期配置
+exec --no-startup-id "sh ~/.config/i3/include/displays.sh"
+# ショートカット
+set $mode_display (m) Main ON, (s) Sub ON, (M) Main OFF, (S) Sub OFF, (d) Default
+mode "$mode_display" {
+  bindsym m exec --no-startup-id xrandr --output DisplayPort-0 --auto --right-of HDMI-A-0, mode "default"
+  bindsym s exec --no-startup-id xrandr --output HDMI-A-0 --auto --left-of DisplayPort-0, mode "default"
+  bindsym Shift+m exec --no-startup-id xrandr --output DisplayPort-0 --auto --off, mode "default"
+  bindsym Shift+s exec --no-startup-id xrandr --output HDMI-A-0 --auto --off, mode "default"
+  bindsym d exec --no-startup-id "sh ~/.config/i3/include/displays.sh", mode "default"
+
+  # back to normal: Enter or Escape
+  bindsym Return mode "default"
+  bindsym Escape mode "default"
+  bindsym $mod+Shift+d mode "default"
+}
+# Declare here the shortcut to bring the display selection menu
+bindsym $mod+Shift+d mode "$mode_display"
