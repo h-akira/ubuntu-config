@@ -2,8 +2,7 @@
 [linux-mint用のもの](https://github.com/h-akira/linux-config)がベースとしている．
 
 # 条件・仕様
-- Deskmini X300
-- Ubuntu
+- Ubuntu 22.04.1 LTS
 - タイル型ウィンドウマネージャのi3を利用する．
 - xkeysnailでキーマップを設定する．
 - ターミナルは`xfce4-terminal`を利用することにして，ショートカットの一部も変更する．
