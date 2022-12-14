@@ -207,8 +207,8 @@ exec --no-startup-id "if [ -e ~/.fehbg ]; then ~/.fehbg; else feh -Zr ~/.config/
 # chrome
 bindsym $mod+c exec --no-startup-id google-chrome
 
-# その他，起動時に実行したいもの
-exec --no-startup-id "if [ -e ~/.config/i3/add.sh ]; then sh ~/.config/i3/add.sh; fi"
+# 追加の設定（非公開）
+include config-add
 
 # Start i3bar to display a workspace bar (plus the system information i3status
 # finds out, if available)

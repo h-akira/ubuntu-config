@@ -1,1 +1,0 @@
-../config-add/i3/i3-add.sh
