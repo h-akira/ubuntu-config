@@ -1,1 +1,1 @@
-../config-add/i3-add.sh
+../config-add/i3/i3-add.sh
