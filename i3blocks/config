@@ -97,15 +97,19 @@ color=#00FF00
 interval=11
 separator=false
 
-# [ssid]
-# color=#00FF00
-# command=~/.config/i3blocks/ssid.sh
-# interval=17
-# separator=false
+[ssid]
+color=#00FF00
+command=~/.config/i3blocks/ssid.sh
+interval=17
+separator=false
 
 [signal_bar]
 command=~/.config/i3blocks/signal_bar.sh
 interval=11
+
+[bluetooth]
+command=~/.config/i3blocks/bluetooth.sh
+interval=5
 
 [xkeysnail]
 command=~/.config/i3blocks/xkeysnail-check.sh
