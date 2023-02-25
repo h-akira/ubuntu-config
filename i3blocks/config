@@ -108,8 +108,8 @@ command=~/.config/i3blocks/signal_bar.sh
 interval=11
 
 [share_photo]
-command=~/.local/opt/Share_Photo/src/done.sh
-interval=59
+command=~/.config/i3blocks/share_photo.sh
+interval=60
 
 [bluetooth]
 command=~/.config/i3blocks/bluetooth.sh
