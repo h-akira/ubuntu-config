@@ -204,6 +204,9 @@ include each-i3/app-shortcuts
 # 背景
 exec --no-startup-id "if [ -e ~/.fehbg ]; then ~/.fehbg; else feh -Zr ~/.config/i3/desktop/; fi"
 
+# dropbox
+exec --no-startup-id "if [ -e ~/.config/i3/each-i3/dropbox.sh ]; then sh ~/.config/i3/each-i3/dropbox.sh; fi"
+
 # chrome
 bindsym $mod+c exec --no-startup-id google-chrome
 
