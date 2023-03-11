@@ -91,11 +91,10 @@ interval=13
 #
 # If the instance is not specified, use the interface used for default route.
 # The address can be forced to IPv4 or IPv6 with -4 or -6 switches.
-[iface]
-#IFACE=wlan0
-color=#00FF00
-interval=11
-separator=false
+# [iface]
+# color=#00FF00
+# interval=11
+# separator=false
 
 [ssid]
 color=#00FF00
@@ -110,6 +109,10 @@ interval=11
 [share_photo]
 command=~/.config/i3blocks/share_photo.sh
 interval=60
+
+[dropbox]
+command=~/.config/i3blocks/dropbox.sh
+interval=6
 
 [bluetooth]
 command=~/.config/i3blocks/bluetooth.sh
