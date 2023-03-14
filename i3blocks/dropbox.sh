@@ -7,5 +7,8 @@ if [ -n "$(ps -C dropbox -o pid --no-heading)" ]; then
   # ~/.dropbox-dist/dropboxd
   echo "Dropbox: ON"
 else
+  COLOR_DOWN=${COLOR_DOWN:-#FF0000}
   echo "Dropbox: OFF"
+  echo "Dropbox: OFF"
+  echo ${COLOR_DOWN}
 fi
