@@ -96,11 +96,11 @@ interval=13
 # interval=11
 # separator=false
 
-[ssid]
-color=#00FF00
-command=~/.config/i3blocks/ssid.sh
-interval=17
-separator=false
+# [ssid]
+# color=#00FF00
+# command=~/.config/i3blocks/ssid.sh
+# interval=17
+# separator=false
 
 [signal_bar]
 command=~/.config/i3blocks/signal_bar.sh
