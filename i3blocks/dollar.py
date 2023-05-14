@@ -34,7 +34,10 @@ def market_open():
 
 def main():
   if market_open():
-    dollar_yen_buy = get_rate()
+    try:
+      dollar_yen_buy = get_rate()
+    except:
+      dollar_yen_buy = "NULL"
     print(f"USD/JPY={dollar_yen_buy}")
   else:
     print("Market is not open")
