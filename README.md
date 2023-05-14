@@ -21,12 +21,15 @@ git submodule update --init
 # i3関係
 sudo apt install i3
 sudo apt install i3blocks
-# 背景用に
+## 背景用に
 sudo apt install feh
-# CPUの温度を表示するために
+
+# i3blocks関係
+## CPUの温度を表示するために
 sudo apt install lm-sensors
-# ドル円の相場を表示するために
-pip3 install pandas-datareade
+## ドル円の相場を表示するために
+## pip3 install pandas-datareade  ## 廃止
+sudo apt install python3-selenium
 
 # 背景
 sudo apt install feh
