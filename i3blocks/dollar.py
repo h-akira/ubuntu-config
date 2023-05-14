@@ -4,9 +4,6 @@
 # Created: 2023-05-15 01:42:51
 
 # Import
-import sys
-import os
-import numpy
 from selenium import webdriver
 from selenium.webdriver.chrome.options import Options
 
