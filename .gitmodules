@@ -4,9 +4,6 @@
 [submodule "i3"]
 	path = i3
 	url = git@github.com:h-akira/i3.git
-[submodule "i3-add"]
-	path = i3-add
-	url = git@github.com:h-akira/i3-add.git
 [submodule "nvim"]
 	path = nvim
 	url = git@github.com:h-akira/vim.git
