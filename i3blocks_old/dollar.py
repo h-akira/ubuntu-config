@@ -1,1 +1,0 @@
-../config-add/i3blocks/dollar.py

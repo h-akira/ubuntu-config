@@ -1,4 +1,0 @@
-# アプリ起動ショートカット
-bindsym $mod+Ctrl+c exec --no-startup-id gnome-control-center
-bindsym $mod+Ctrl+f exec --no-startup-id nautilus 
-bindsym $mod+Ctrl+v exec --no-startup-id code

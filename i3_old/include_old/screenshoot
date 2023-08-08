@@ -1,5 +1,0 @@
-# スクリーンショット
-bindsym Print exec --no-startup-id "xfce4-screenshooter -s ~/Pictures/xfce4-screenshooter/$(date +'%Y-%m-%d_%I-%M-%S_full.png') -f"
-bindsym Ctrl+Print exec --no-startup-id "xfce4-screenshooter -s ~/Pictures/xfce4-screenshooter/$(date +'%Y-%m-%d_%I-%M-%S_window.png') --window"
-bindsym Shift+Print exec --no-startup-id "xfce4-screenshooter -s ~/Pictures/xfce4-screenshooter/$(date +'%Y-%m-%d_%I-%M-%S_region.png') --region"
-bindsym $mod+Print exec --no-startup-id xfce4-screenshooter

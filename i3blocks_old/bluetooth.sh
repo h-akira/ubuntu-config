@@ -1,1 +1,0 @@
-../config-add/i3blocks/ubuntu-bluetooth.sh
