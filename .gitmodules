@@ -1,9 +1,0 @@
-[submodule "i3/each-i3"]
-	path = i3/each-i3
-	url = git@github.com:h-akira/ubuntu-i3.git
-[submodule "i3blocks/i3blocks-contrib"]
-	path = i3blocks/i3blocks-contrib
-	url = git@github.com:vivien/i3blocks-contrib.git
-[submodule "config-add"]
-	path = config-add
-	url = git@github.com:h-akira/ubuntu-config-add.git
