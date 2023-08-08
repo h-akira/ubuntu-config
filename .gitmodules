@@ -10,3 +10,6 @@
 [submodule "nvim"]
 	path = nvim
 	url = git@github.com:h-akira/vim.git
+[submodule "xkeysnail"]
+	path = xkeysnail
+	url = git@github.com:h-akira/xkeysnail.git
