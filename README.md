@@ -14,7 +14,7 @@ cd ~/.config
 git init
 git remote add origin git@github.com:h-akira/ubuntu-config.git
 git pull origin main
-git submodule update --init
+git submodule update --init --recursive
 ```
 必要ものをインストールする．  
 ```
@@ -28,11 +28,7 @@ sudo apt install feh
 ## CPUの温度を表示するために
 sudo apt install lm-sensors
 ## ドル円の相場を表示するために
-## pip3 install pandas-datareade  ## 廃止
 sudo apt install python3-selenium
-
-# 背景
-sudo apt install feh
 
 # xfce4
 sudo apt install xfce4-terminal
