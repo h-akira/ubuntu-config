@@ -42,8 +42,8 @@ sudo pip3 install xkeysnail
 ```
 sudo update-alternatives --config x-terminal-emulator
 ```
-[xkeysnail](https://github.com/h-akira/xkeysnail)をどこかに`git clone`して`src`のパスを通し，
-[これらのスクリプト内でsudoをパスワード無しで利用するために，
+[xkeysnail/bin](https://github.com/h-akira/xkeysnail/bin)の
+スクリプト内でsudoをパスワード無しで利用するために，
 `sudo visudo`でファイルを開いて以下を追記する．
 ```
 ${ユーザーネーム} ALL=(ALL) NOPASSWD: /usr/local/bin/xkeysnail
@@ -52,6 +52,29 @@ ${ユーザーネーム} ALL=(ALL) NOPASSWD: /usr/local/bin/xkeysnail
 ```
 sudo update-alternatives --config editor
 ```
-
+起動時にDropBoxを開始するため，`service/dropbox_start.service`を
+```
+/etc/systemd/system/
+```
+に配置した上で`${USER}`をユーザーネームに書き換える．
+`vi`や`rsync`を用いる場合は`sudo`が必要．
+```
+sudo rsync dropbox_start.service /etc/systemd/system/
+sudo vi /etc/systemd/system/dropbox_start
+```
+その後，以下のコマンドを実行する．
+```
+sudo systemctl enable dropbox_start
+sudo systemctl start dropbox_start
+```
+`dropbox_start.service`を編集した場合は
+```
+sudo systemctl daemon-reload
+sudo systemctl restart dropbox_start
+```
+動作を確認する場合は
+```
+sudo systemctl status dropbox_start
+```
 
 

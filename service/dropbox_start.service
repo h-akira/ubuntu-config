@@ -1,0 +1,10 @@
+[Unit]
+Description=Run DropBox
+
+[Service]
+User=${USER}
+ExecStart=/home/{USER}/.config/service/dropbox.sh
+Restart=always
+
+[Install]
+WantedBy=multi-user.target
